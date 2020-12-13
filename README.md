@@ -1,2 +1,2 @@
 # Cyber-patriot
-Code made for the CyberPatriot-XIII
+Code made for the CyberPatriot-XIII competition or as a layout to get an idea and prep. Created by me, err0r20, or also known as Exspiravit. Enjoy.
