@@ -4,7 +4,6 @@
 
 #Cyberpatriot Script
 
-
 aptfun(){
 apt-get -V -y install --reinstall coreutils
 apt-get update -y
