@@ -161,4 +161,3 @@ start %path%resources\WSCC\Sysinternals\Autoruns.exe
 
 ::VerifySYS
 sfc /verifyonly
-
