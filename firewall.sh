@@ -56,3 +56,16 @@ lsof  -i -n -P
 netstat -tulpn
 echo "UFW Enabled"
 }
+
+start(){
+firewall
+ufw
+}
+
+echo "Run my firewall script? y/n?"
+read Start
+if [ $Start == 'y' ]; then
+start
+elfi [ $Start == 'n' ] exit;
+cd $(pwd)
+fi
