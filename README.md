@@ -5,3 +5,4 @@ Code made for the CyberPatriot-XIII competition or as a layout to get an idea an
 --------------
 Download the file and make it executable from the command line by:
 chmod +x
+The windows scripts and linux scripts have to be run with admin privileges
