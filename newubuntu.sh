@@ -106,14 +106,14 @@ echo "Firewall enabled"
 }
 
 passauthstrength(){
-echo "Making password authentication a thing here, gimme a sec"
+echo "Making password authentication simple for you"
 sudo sed -i '1 S/^/auth optional pam_tally.so deny=5 unlock_time=900 onerr=fail audit even_deny_root_account silent\n/' /etc/pam.d/common-auth 
 sudo sed -i '1 s/^/password requisite pam_cracklib.so retry=3 minlen=8 difolk=3 reject_username minclass=3 maxrepeat=2 dcredit=1 ucr edit=1 lcredit=1 ocredit=1\n/' /etc/pam.d/common-password
 echo "Done"
 }
 
 passwordage(){
-echo "Configuring password aging controls, please wait while I make your life easier.."
+echo "Configuring password aging controls"
 sudo sed -i '/^PASS_MAX_DAYS/ c\PASS_MAX_DAYS   90' /etc/login.defs
 sudo sed -i '/^PASS_MIN_DAYS/ c\PASS_MIN_DAYS   10'  /etc/login.defs
 sudo sed -i '/^PASS_WARN_AGE/ c\PASS_WARN_AGE   7' /etc/login.defs
@@ -196,7 +196,7 @@ filesecfun
 RootPasswordProtected
 }
 
-echo "Run my awesome script? y/n?"
+echo "Run my script? y/n?"
 read Start
 if [ $Start == 'y' ]; then
 start
